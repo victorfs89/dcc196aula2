@@ -8,17 +8,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView textViewMensagem = findViewById(R.id.textViewMensagem);
+    private EditText editTextNome = findViewById(R.id.editTextNome);
+    private EditText editTextStarter = findViewById(R.id.editTextStarter);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        textViewMensagem = findViewById(R.id.textViewMensagem);
+        editTextNome = findViewById(R.id.editTextNome);
+        editTextStarter = findViewById(R.id.editTextStarter);
     }
 
     public void clickBotaoMensagem(View origem){
-        TextView textViewMensagem = findViewById(R.id.textViewMensagem);
-        EditText editTextNome = findViewById(R.id.editTextNome);
-        EditText editTextStarter = findViewById(R.id.editTextStarter);
 
         String nome = editTextNome.getText().toString();
         String starter = editTextStarter.getText().toString();
