@@ -15,50 +15,54 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextStarter" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nomeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="Nome:"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextNome"
         android:layout_width="330dp"
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Digite seu nome aqui"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/nomeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/nomeLabel" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewStarterLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:text="Starter:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNome"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextStarter"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Qual seu starter preferido?"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewStarterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStarterLabel" />
 
     <Button
         android:id="@+id/botaoMensagem"
@@ -69,6 +73,6 @@
         android:text="Botão Mensagem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextStarter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
