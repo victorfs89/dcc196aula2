@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,8 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickBotaoMensagem(View origem){
         TextView textViewMensagem = findViewById(R.id.textViewMensagem);
+        EditText editTextNome = findViewById(R.id.editTextNome);
+        EditText editTextStarter = findViewById(R.id.editTextStarter);
 
-        textViewMensagem.setText("Olá Mundo!!!");
+        String nome = editTextNome.getText().toString();
+        String starter = editTextStarter.getText().toString();
+
+        String mensagem = String.format("Olá treinador %s. Seu starter é o %s", nome, starter);
+
+        textViewMensagem.setText(mensagem);
 
     }
 }
